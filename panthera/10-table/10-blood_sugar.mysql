@@ -1,0 +1,7 @@
+CREATE TABLE `blood_sugars` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `user` INT UNSIGNED NOT NULL,
+    `stamp` BIGINT UNSIGNED NOT NULL,
+    `mmol` SMALLINT UNSIGNED NOT NULL COMMENT 'multiple by 10',
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

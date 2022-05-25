@@ -1,0 +1,4 @@
+CREATE TABLE `stences` (
+    `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,5 @@
+CREATE TABLE `sexual_orientations` (
+    `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `stence` INT UNSIGNED NOT NULL,
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

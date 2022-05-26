@@ -1,0 +1,15 @@
+CREATE TABLE `foods` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `stence` INT UNSIGNED NOT NULL,
+    `qrcode` CHAR(128),
+    `barcode` CHAR(128),
+    `energy` INT UNSIGNED COMMENT 'in 100g multiply with 10',
+    `fat` INT UNSIGNED,
+    `saturates` INT UNSIGNED,
+    `carbohydrate` INT UNSIGNED,
+    `sugar` INT UNSIGNED,
+    `fiber` INT UNSIGNED,
+    `protein` INT UNSIGNED,
+    `salt` INT UNSIGNED,
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,5 @@
+create table `food_materials` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `stence` INT UNSIGNED NOT NULL,
+    key `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

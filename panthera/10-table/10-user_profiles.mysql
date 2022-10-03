@@ -1,0 +1,8 @@
+CREATE TABLE `user_profiles` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `user` INT UNSIGNED NOT NULL,
+    `gender` SMALLINT UNSIGNED NOT NULL,
+    `sexuality` SMALLINT UNSIGNED NOT NULL,
+    `bod` BIGINT NOT NULL,
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

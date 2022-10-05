@@ -1,0 +1,17 @@
+CREATE OR REPLACE FUNCTION `blood_oxygenAdd`(
+    IUSER INT,
+    ISTAMP BIGINT UNSIGNED,
+    SPO2 SMALLINT UNSIGNED 
+) RETURNS INT UNSIGNED
+BEGIN
+    INSERT INTO 
+        `blood_sugars` 
+            (
+                `blood_oxygens`.`user`, 
+                `blood_oxygens`.`stamp`, 
+                `blood_oxygens`.`spo2`
+            )
+            VALUES 
+            (IUSER, ISTAMP, ISPO2);
+    RETURN LAST_INSERT_ID();
+END

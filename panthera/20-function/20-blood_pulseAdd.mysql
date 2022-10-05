@@ -1,0 +1,17 @@
+CREATE OR REPLACE FUNCTION `blood_pulseAdd`(
+    IUSER INT,
+    ISTAMP BIGINT UNSIGNED,
+    IPULSE TINYINT UNSIGNED 
+) RETURNS INT UNSIGNED
+BEGIN
+    INSERT INTO 
+        `blood_pulses` 
+            (
+                `blood_pulses`.`user`,
+                `blood_pulses`.`stamp`,
+                `blood_pulses`.`pulse`
+            )
+            VALUES 
+            (IUSER, ISTAMP, IPULSE);
+    RETURN LAST_INSERT_ID();
+END

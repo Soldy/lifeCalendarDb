@@ -1,0 +1,19 @@
+CREATE OR REPLACE FUNCTION `blood_pressurAdd`(
+    IUSER INT,
+    ISTAMP BIGINT UNSIGNED,
+    ISYS TINYINT UNSIGNED 
+    IDIA TINYINT UNSIGNED 
+) RETURNS INT UNSIGNED
+BEGIN
+    INSERT INTO 
+        `blood_pressurs` 
+            (
+                `blood_pressurs`.`user`,
+                `blood_pressurs`.`stamp`,
+                `blood_pressurs`.`sys`,
+                `blood_pressurs`.`dia`
+            )
+            VALUES 
+            (IUSER, ISTAMP, ISYS, IDIA);
+    RETURN LAST_INSERT_ID();
+END

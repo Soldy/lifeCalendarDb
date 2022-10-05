@@ -1,0 +1,17 @@
+CREATE OR REPLACE FUNCTION `body_weightAdd`(
+    IUSER INT,
+    ISTAMP BIGINT UNSIGNED,
+    IKG SMALLINT UNSIGNED 
+) RETURNS INT UNSIGNED
+BEGIN
+    INSERT INTO 
+        `body_hweights` 
+            (
+                `body_weights`.`user`,
+                `body_weights`.`stamp`,
+                `body_weights`.`kg`
+            )
+            VALUES 
+            (IUSER, ISTAMP, IKG);
+    RETURN LAST_INSERT_ID();
+END

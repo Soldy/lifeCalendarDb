@@ -1,0 +1,17 @@
+CREATE OR REPLACE FUNCTION `body_heightAdd`(
+    IUSER INT,
+    ISTAMP BIGINT UNSIGNED,
+    ICM TINYINT UNSIGNED 
+) RETURNS INT UNSIGNED
+BEGIN
+    INSERT INTO 
+        `body_heights` 
+            (
+                `body_heights`.`user`,
+                `body_heights`.`stamp`,
+                `body_heights`.`cm`
+            )
+            VALUES 
+            (IUSER, ISTAMP, ICM);
+    RETURN LAST_INSERT_ID();
+END

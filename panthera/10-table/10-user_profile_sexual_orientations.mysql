@@ -1,4 +1,4 @@
-CREATE TABLE `sexual_orientations` (
+CREATE TABLE `user_profile_sexual_orientations` (
     `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     `stence` INT UNSIGNED NOT NULL,
     KEY `index` (`id`)

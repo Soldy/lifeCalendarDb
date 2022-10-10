@@ -1,0 +1,11 @@
+CREATE OR REPLACE PROCEDURE `blood_pressurGet`(
+    IUSER INT
+)
+BEGIN
+    SELECT
+        `blood_pressurs`.`stamp` AS `time`,
+        `blood_pressurs`.`sys` AS `sys`,
+        `blood_pressurs`.`dia` AS `dia`
+    FROM
+        `blood_pressurs`;
+END

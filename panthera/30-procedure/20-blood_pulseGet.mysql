@@ -1,0 +1,10 @@
+CREATE OR REPLACE PROCEDURE `blood_pulseGet`(
+    IUSER INT
+)
+BEGIN
+    SELECT
+        `blood_pulses`.`stamp` AS `time`,
+        `blood_pulses`.`pulse` AS `pulse`
+    FROM
+        `blood_pulses`;
+END

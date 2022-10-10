@@ -1,0 +1,10 @@
+CREATE OR REPLACE PROCEDURE `blood_oxygenGet`(
+    IUSER INT
+)
+BEGIN
+    SELECT
+        `blood_sugars`.`stamp` AS `time`,
+        `blood_sugars`.`mmol` AS `mol`
+    FROM
+        `blood_sugars`;
+END

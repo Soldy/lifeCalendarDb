@@ -1,6 +1,7 @@
-CREATE TABLE `meals` (
+CREATE TABLE `life_menstruations` (
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
     `user` INT UNSIGNED NOT NULL,
-    `stamp` BIGINT UNSIGNED NOT NULL,
+    `start` BIGINT NOT NULL,
+    `end` BIGINT NOT NULL,
     KEY `index` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

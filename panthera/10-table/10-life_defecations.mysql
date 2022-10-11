@@ -1,4 +1,4 @@
-CREATE TABLE `defecations` (
+CREATE TABLE `life_defecations` (
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
     `user` INT UNSIGNED NOT NULL,
     `stamp` BIGINT UNSIGNED NOT NULL,

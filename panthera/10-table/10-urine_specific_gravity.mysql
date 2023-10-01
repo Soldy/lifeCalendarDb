@@ -1,0 +1,7 @@
+CREATE TABLE `urine_specific_gravity` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `user` INT UNSIGNED NOT NULL,
+    `stamp` BIGINT UNSIGNED NOT NULL,
+    `specific_gravity` BIGINT UNSIGNED NOT NULL,
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

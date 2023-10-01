@@ -1,0 +1,7 @@
+CREATE TABLE `urine_ketones` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `user` INT UNSIGNED NOT NULL,
+    `stamp` BIGINT UNSIGNED NOT NULL,
+    `ketones` TINYINT UNSIGNED NOT NULL,
+    KEY `index` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
